@@ -21,9 +21,11 @@ def render_login():
             
             submit_button = st.form_submit_button("ACESSAR", type="primary", use_container_width=True)
 
-            # Escolher sua Senha #
             if submit_button:
-                if senha == "admin":
+                # Pega a senha configurada no secrets.toml de forma segura
+                senha_correta = st.secrets.get("APP_PASSWORD", "admin")
+                
+                if senha == senha_correta:
                     st.session_state["authenticated"] = True
                     st.rerun()
                 else:
