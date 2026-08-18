@@ -53,6 +53,7 @@ Siga os passos abaixo para clonar e rodar o projeto na sua máquina:
 Bash
 git clone [https://github.com/Diuary-Machado/Dcm-Safe.git](https://github.com/Diuary-Machado/Dcm-Safe.git)
 cd Dcm-Safe
+
 2. Crie e ative um ambiente virtual
 No Windows (PowerShell):
 
@@ -64,9 +65,11 @@ No Linux / macOS:
 Bash
 python3 -m venv venv
 source venv/bin/activate
+
 3. Instale as dependências
 Bash
 pip install -r requirements.txt
+
 4. Configure a Senha de Acesso
 Para que o sistema funcione, é necessário configurar a senha do cofre localmente:
 
@@ -76,13 +79,13 @@ Dentro dela, crie um arquivo chamado secrets.toml.
 
 Adicione sua senha no seguinte formato:
 
-Ini, TOML
 APP_PASSWORD = "sua_senha_aqui"
 (Nota: O arquivo secrets.toml é ignorado pelo Git e nunca será exposto publicamente).
 
 5. Execute a aplicação
 Bash
 streamlit run app.py
+
 💻 Tecnologias Utilizadas
 Python: Lógica e Backend
 
