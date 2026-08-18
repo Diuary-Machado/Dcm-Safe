@@ -1,0 +1,5 @@
+finance.db
+__pycache__/
+venv/
+.streamlit/
+.DS_Store
